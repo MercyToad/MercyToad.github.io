@@ -63,3 +63,35 @@ body {
   display: block;
   margin: 5px;
 }
+
+@media(min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+header nav ul {
+  display: flex;
+}
+
+header a {
+  border-top: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 1em;
+}
+
+.cards li {
+  margin-bottom: 0;
+}
+}
